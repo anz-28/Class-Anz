@@ -97,6 +97,9 @@ background: radial-gradient(circle, rgba(237, 238, 174, 1) 0%, rgba(148, 187, 23
 #pfp{
   background-image: url("img/Racer.jfif");
   background-position: 50% 60%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-color: #deedd6;
     width: 50%;
     max-width: 240px;
     height: 38%;
@@ -207,6 +210,11 @@ ion-icon{
     flex-direction: column;
     height: 100%;
     justify-content: center;
+  }
+  #pfp{
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-color: #deedd6;
   }
   #profile_card{
     padding: 0;
