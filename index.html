@@ -5,27 +5,118 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Profile</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="Style.css">
 </head>
 <body>
     <div id="s1">
         <div id="profile_card">
-            <img src="img/shark.jfif" id="pfp">
-            <p>Aa</p>
+            <div id="maincard">
+                <div id="pfp"></div>
+                <div id="eldendiv">
+                    <div id="maincardtxt">
+                        <div id="nametag">
+                            <p>Anshudhar Mashahary</p>
+                        </div>
+                        <div id="txtvar">
+                            <p>Variables are random,
+                            <br>
+                            But personally,
+                            I would
+                            <br>
+                            <code>Var = Ka</code></p>
+                        </div>
+                    </div>
+                    <img src="img/Civic.png" id="eldenlogo">
+                </div>
+            </div>
+            <div id="links">
+                <button class="btn" onclick="window.open('mailto:anshudharmashahary@gmail.com','_blank')"><ion-icon name="mail-outline" id="mail"></ion-icon></button>
+                <button class="btn" onclick="window.open('https://discordapp.com/users/749895105791393844','_blank')"><ion-icon name="logo-discord" id="dis"></ion-icon></button>
+                <button class="btn" onclick="window.open('https://github.com/Anz-28','_blank')"><ion-icon name="logo-github" id="github"></ion-icon></button>
+            </div>
         </div>
         <div id="info">
+            <div id="biodata" class="infocd">
+                <h3 id="txtbox3">BIODATA------------</h3>
+                <div id="biocontents">
+                <div class="bio">
+                    <ul>
+                        <li>Age : 20</li>
+                        <li>Ethnicity : Indian</li>
+                        <li>Drawback : Chinesebuild</li>
+                    </ul>
+
+                </div>
+                <div class="bio"><ul>
+                        <li>Eyesight : Glassed</li>
+                        <li>Backbone : Curved</li>
+                        <li>Memory : Temporary</li>
+                    </ul></div>
+                </div>
+            </div>
             <div id="achieve" class="infocd">
-                <p>hlo</p>
+                <h3 id="txtbox1">ACHIEVEMENTS----</h3>
+                <div id="achicontents">
+                <div class="achi">
+                    <ul>
+                        <li>Varberi</li>
+                        <li>Age : 20</li>
+                        <li>Good Indian</li>
+                        
+                    </ul>
+
+                </div>
+                <div class="achi"><ul>
+                        <li>Max Strength</li>
+                        <li>Can Drive</li>
+                        <li>Goldmedalist in Drawing (Class 2)</li>
+                    </ul></div>
+                </div>
             </div>
             <div id="eduhist" class="infocd">
-                <p>hlo</p>
+                <h3 id="txtbox2">EDUCATION---------</h3>
+                <div id="educontents">
+                <div class="edu">
+                    <ul>
+                        <li>LKG - UKG : Sangrila</li>
+                        <li>Class 1-5 : KVK</li>
+                        <li>Class 6-7 : SSG</li>
+                        
+                    </ul>
+
+                </div>
+                <div class="edu"><ul>
+                        <li>Class 8-10 : RPS</li>
+                        <li>Class 11-12 : SV</li>
+                        <li>B.TECH : CITK</li>
+                    </ul></div>
+                </div>
             </div>
-            <div id="biodata" class="infocd">
-                <p>nn</p>
+            <div id="skills" class="infocd">
+                <h3 id="txtbox4">SKILLS---------------</h3>
+                <div id="skillcontents">
+                <div class="skill">
+                    <ul>
+                        <li>C language</li>
+                        <li>JavaScript language</li>
+                        <li>NestJS Library</li>
+                        
+                    </ul>
+
+                </div>
+                <div class="skill"><ul>
+                        <li>Photography</li>
+                        <li>Videography</li>
+                        <li>Editor</li>
+                    </ul></div>
+                </div>
             </div>
+            
         </div>
     </div>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>

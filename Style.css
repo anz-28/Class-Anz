@@ -1,36 +1,19 @@
-.quantico-regular {
-  font-family: "Quantico", sans-serif;
+.vt323-regular {
+  font-family: "VT323", monospace;
   font-weight: 400;
   font-style: normal;
 }
 
-.quantico-bold {
-  font-family: "Quantico", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.quantico-regular-italic {
-  font-family: "Quantico", sans-serif;
-  font-weight: 400;
-  font-style: italic;
-}
-
-.quantico-bold-italic {
-  font-family: "Quantico", sans-serif;
-  font-weight: 700;
-  font-style: italic;
-}
 body{
     height: 100dvh;
-    background-image: linear-gradient(to bottom right, rgb(107, 107, 107), rgb(0, 0, 0));
+    background-color: #e1e1d5;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0;
     padding: 0;
-    font-family: "Quantico";
-    
+    font-family: "VT323";
+
 }
 
 #s1{height: 90dvh;
@@ -42,9 +25,69 @@ body{
 
 }
 #profile_card{
-    background-color: aliceblue;
-    height: 80%;
+  font-size: 150%;
+    padding: 0;
+    height: 85%;
     width: 30%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-between;
+}
+#maincard{
+      border : 5px dashed #4a494b;
+  background-color: #d35c5c;
+  color: #d1d1cd;
+    height: 70%;
+    width: 100%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    padding: 0;
+    margin: 0;
+    row-gap: 1%;
+}
+#maincardtxt{
+  width: 50%;
+  padding: 0;
+  margin: 0;
+   display: flex;
+  flex-direction: column;
+    align-items: center;
+    justify-content:center;
+
+}
+#eldendiv{
+  width: 100%;
+  padding: 0;
+  margin: 0;
+   display: flex;
+  flex-direction: row;
+    align-items: center;
+    justify-content:center;
+
+}
+
+#eldenlogo{
+background: #edeeae;
+background: radial-gradient(circle, rgba(237, 238, 174, 1) 0%, rgba(148, 187, 233, 0) 40%);
+  width: 40%;
+  object-fit: contain;
+}
+
+
+#txtvar, #nametag{
+  width: 100%;
+}
+#links{
+  background-color: #d35c5c;
+  color: #d1d1cd;
+      border : 5px dashed #4a494b;
+    height: 25%;
+    width: 100%;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -52,26 +95,147 @@ body{
     justify-content:space-around;
 }
 #pfp{
-    width: 80%;
-    height: 50%;
-    object-fit: cover;
+  background-image: url("img/Racer.jfif");
+  background-position: 50% 60%;
+    width: 50%;
+    max-width: 240px;
+    height: 38%;
+    object-fit: contain;
     border-radius: 15px;
+    border: 3px dashed #4a494b;
 }
 #info{
-    background-color: aliceblue;
-    height: 80%;
+  background-color: #a8a8a0;
+  font-size: 120%;
+  color: #4a494b;
+    height: 85%;
     width: 60%;
     border-radius: 20px;
+    border : 5px dashed #4a494b;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    overflow:hidden;
 }
 .infocd{
     border-radius: 15px;
     height: 25%;
     width: 80%;
-    background-color: aqua;
+    /* background-color: #221932; */
     display: flex;
+    flex-direction: column;
     justify-content: center;
+}
+#biocontents{
+  width: 100%;
+  height: 60%;
+  display: flex;
+  flex-direction: row;
+}
+.bio{
+  width: 50%;
+  height: 100%;
+}
+#achicontents{
+  width: 100%;
+  height: 60%;
+  display: flex;
+  flex-direction: row;
+}
+.achi{
+  width: 50%;
+  height: 100%;
+}
+#educontents{
+  width: 100%;
+  height: 60%;
+  display: flex;
+  flex-direction: row;
+}
+.edu{
+  width: 50%;
+  height: 100%;
+}
+#skillcontents{
+  width: 100%;
+  height: 60%;
+  display: flex;
+  flex-direction: row;
+}
+.skill{
+  width: 50%;
+  height: 100%;
+}
+#links{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10%;
+}
+.btn{
+  margin: 0;
+  padding: 0;
+  background-color: #d0cec2;
+  height: 60%;
+  width: 24%;
+  border-radius: 50%;
+    border: 2px solid #3d3c3d;
+}
+@media(hover: hover){
+.btn:hover{
+  height: 65%;
+  width: 26%;
+  background-color: #8ffaea;
+  transition: 0.2s;
+}
+}
+ion-icon{
+  font-size: 300%;
+  color: #3d3c3d;
+
+}
+@media(max-width: 650px){
+  body{
+    width: 100dvw;
+    height: 180dvh;
+    overflow: scroll;
+  }
+  #s1{
+    width: 90%;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+  }
+  #profile_card{
+    padding: 0;
+    width: 85%;
+    height: 35%;
+    justify-content: center;
+    row-gap: 2%;
+  }
+  #maincard{
+    height: 40dvh;
+  }
+  #links{
+    height: 20%;
+  }
+  #eldendiv{
+    height: 50%;
+  }
+#maincardtxt{
+  height: 100%;
+}
+ #txtvar, #nametag{
+font-size: 70%;
+}
+#info{
+  width: 85%;
+  height: 100dvh;
+}
+#infocd{
+  width: 95%;
+  font-size: 30%;
+}
 }
