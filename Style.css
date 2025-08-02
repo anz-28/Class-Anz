@@ -204,6 +204,7 @@ ion-icon{
     width: 100dvw;
     height: 180dvh;
     overflow: scroll;
+    scroll-behavior: smooth;
   }
   #s1{
     width: 90%;
