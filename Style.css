@@ -211,6 +211,7 @@ ion-icon{
     flex-direction: column;
     height: 100%;
     justify-content: center;
+        scroll-behavior: smooth;
   }
   #pfp{
       background-size: 100%;
